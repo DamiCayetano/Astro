@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+<head>
+    <!--Define la codificación de caracteres de la página web-->
+    <meta charset="UTF-8">
+    <!--Controla como se muestra la página web en dispositivos móviles y responsivos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Se proporciona un resumen de la página web para los motores de busqueda-->
+    <meta name="descripcion" content="Somas una tienda con los mejores accesorios y de buena calidad">
+    <!--Se define las palabras claves para los motores de busqueda-->
+    <!--OJO: Actualmente ya no es recomendado y google no lo considera relevante-->
+    <meta name="keywords" content="tienda, accesorios, ropa, hombre, araña">
+    <!--Esto indica a los motores de busqueda como indexar la página-->
+    <meta name="robots" content="index, follow">
+    <!--Indica el autor de la página-->
+    <meta name="author" content="Damaris Palma">
+    <!--Optimiza y personaliza la vista previa de la página en las redesde sociales como facebook y whatsApp-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Mi Tienda de accesorios Astro">
+    <meta property="og:description" content="Encuentra los mejores accesorios para hombres al mejor precio.">
+    <meta property="og:image" content="https://i.pinimg.com/736x/ea/98/27/ea9827cfb01ca90dcdd4178dab818313.jpg">
+    <meta property="og:url" content="https://github.com/DamiCayetano/Astro.git">
+    <!--Personaliza la vista previa para twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mi Tienda de accesorios Astro">
+    <meta name="twitter:description" content="Encuentra los mejores accesorios para hombres.">
+    <meta name="twitter:image" content="https://i.pinimg.com/736x/ea/98/27/ea9827cfb01ca90dcdd4178dab818313.jpg">
+    <title>Register</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <section>
+        <div class="login_img">
+            <img src="assets/img/login_imagen.jpg" alt="">
+            <div class="text">
+                <h2>Exploren nuevas experiencias en este mundo misterioso.</h2>
+            </div>
+        </div>
+        <div class="login_content">
+            <div class="frame">
+                <h4>Spider-Man</h4>
+            </div>
+            <div class="form">
+                <form id="registro">
+                    <h2 class="">Crear Cuenta 🕷️</h2>
+                    <div class="explorar">
+                        <a href="https://es.pinterest.com/pin/523754631685848412/" class="opcion_imagenes">Ver imagenes</a>
+                        <a href="https://www.youtube.com/results?search_query=spider-man" class="opcion_videos">Ver videos</a>
+                    </div>
+                    <div class="campos">
+                        <label for="nombre">Nombres</label><br>
+                        <input type="text" id="nombre" name="nombre" required><br>
+                        <label for="apellido">Apellidos</label><br>
+                        <input type="text" id="apellido" name="apellido" required><br>
+                        <label for="email">E-mail</label><br>
+                        <input type="email" id="email" name="email" required><br>
+                        <label for="contraseña">Contraseña</label><br>
+                        <input type="password" id="contraseña" name="contraseña" required>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Enviar</button>
+                    </div>
+
+                    <div class="modal" id="modal">
+                        <p id="modalMensaje"></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/registro.js"></script>
+</body>
+</html>

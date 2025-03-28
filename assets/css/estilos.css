@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0; 
+    background: linear-gradient(#32405B, #9A6E72);
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    justify-content: center;
+    display: flex;
+    border-radius: 27px;
+    max-width: 850px;
+    background-color: white;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login_img {
+    position: relative;
+}
+
+.login_img img {
+    max-width: 350px;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.text {
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    color: white;
+    font-size: 15px;
+}
+
+.frame {
+    text-align: right;
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(83, 83, 83);
+}
+
+.form{
+    margin: 30px 50px;
+}
+
+.explorar{
+    margin-top: 8px;
+    display: flex;
+    gap: 20px;
+}
+
+.opcion_imagenes{
+    text-decoration: none;
+    background: linear-gradient(#32405B, #9A6E72);
+    padding: 10px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.opcion_videos{
+    text-decoration: none;
+    background-color: rgb(219, 219, 219);
+    padding: 10px 20px;
+    color: rgb(37, 37, 37);
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.campos {
+    margin-top: 10px;
+}
+
+.campos label {
+    color: #333;
+}
+
+.campos input[type="text"],
+.campos input[type="email"],
+.campos input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.campos input[type="text"]:focus,
+.campos input[type="email"]:focus,
+.campos input[type="password"]:focus {
+    border-color: #32405B;
+    outline: none;
+}
+
+.button button{
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    background: linear-gradient(#32405B, #9A6E72);
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.modal{
+    margin-top: 10px;
+    color: #32405B;
+    text-align: center;
+}
+
+@media (max-width: 728px) {
+    section {
+        flex-direction: column;
+        max-width: 250px;
+    }
+    .login_img{
+        max-height: 140px;
+        overflow: hidden;
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+    .login_img img {
+        max-width: 250px;
+        object-fit: cover;
+        clip-path: inset(0 0 40% 0);
+    }
+    .text {
+        top: 65%;
+        left: 3%;
+        font-size: 11px;
+    }
+    .form{
+        margin: 15px 20px;
+    }
+    .titulo{
+        font-size: 18px;
+    }
+    .frame {
+        font-size: 12px;
+    }
+    .opcion_imagenes{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .opcion_videos{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+    .campos label {
+        font-size: 14px;
+    }
+    .campos input[type="text"],
+    .campos input[type="email"],
+    .campos input[type="password"] {
+    padding: 3px;
+    }
+    .button button{
+        padding: 8px 15px;
+        font-size: 14px;
+        font-weight: 200;
+    }
+
+}
+
