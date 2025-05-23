@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://damicayetano.github.io/Astro/sitemap.xml
